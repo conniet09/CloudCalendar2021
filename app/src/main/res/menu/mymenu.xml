@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Settings"
+        android:id="@+id/settingsOption"/>
+
+    <item android:title="Events Near Me"
+        android:id="@+id/eventsNearMeOption"/>
+
+    <item android:title="Sign Out"
+        android:id="@+id/signOutOption"/>
+</menu>

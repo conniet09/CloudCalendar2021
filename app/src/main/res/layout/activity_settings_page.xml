@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsPage">
+
+    <TextView
+        android:id="@+id/headerSettingsPage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="25"
+        android:background="@color/boxBlue"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:gravity="center"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/calendarIcon"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/headerSettingsPage"
+        app:layout_constraintEnd_toEndOf="@+id/headerSettingsPage"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headerSettingsPage"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/ic_calendar"
+        app:tint="@color/backgroundColor" />
+
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/headerSettingsPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headerSettingsPage"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/ic_backarrow"
+        app:tint="@color/backgroundColor" />
+
+    <Button
+        android:id="@+id/blackButton"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerSettingsPage"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/whiteButton"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="White"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackButton"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <Button
+        android:id="@+id/purpleButton"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Purple"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteButton"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <Button
+        android:id="@+id/blueButton"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Blue"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purpleButton"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hi"
+        android:textSize="80dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/abhaya_libre_bold"
+        app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueButton"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Sign Out"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerSettingsPage"
+        app:layout_constraintVertical_bias="0.862" />
+
+    <ImageView
+        android:id="@+id/faceIcon"
+        android:layout_width="126dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueButton"
+        app:layout_constraintVertical_bias="0.476"
+        app:srcCompat="@drawable/ic_face"
+        app:tint="@color/lighterBlue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

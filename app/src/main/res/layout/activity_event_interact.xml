@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popupbg"
+    tools:context=".EventInteract"
+    android:weightSum="100">
+
+    <Button
+        android:id="@+id/editEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33"
+        android:backgroundTint="@color/purple_200"
+        android:layout_margin="10dp"
+        android:text="Edit Event"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/deleteEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33"
+        android:backgroundTint="@color/cancelRed"
+        android:layout_margin="10dp"
+        android:text="Delete Event"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/cancelEventInteract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33"
+        android:backgroundTint="@color/teal_200"
+        android:layout_margin="10dp"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+
+</LinearLayout>

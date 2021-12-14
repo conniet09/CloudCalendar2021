@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MorePage">
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="460dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Sign Out"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
+
+    <TextView
+        android:id="@+id/headerMorePage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="25"
+        android:background="@color/boxBlue"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:gravity="center"
+        android:text="More"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Settings"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerMorePage"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/eventsNearMeButton"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Events Near Me"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
+
+    <ImageView
+        android:id="@+id/calendarIcon"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        app:tint="@color/backgroundColor"
+        app:layout_constraintBottom_toBottomOf="@+id/headerMorePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_calendar" />
+
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/headerMorePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/headerMorePage"
+        app:layout_constraintTop_toTopOf="@+id/headerMorePage"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/ic_backarrow"
+        app:tint="@color/backgroundColor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
